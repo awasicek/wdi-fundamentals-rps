@@ -38,25 +38,25 @@ function getComputerMove(move) {
 function getWinner(playerMove,computerMove) {
     var winner;
 if (playerMove == 'rock' && computerMove == 'scissors') {
-    getWinner = 'player';
+    winner = 'player';
 }
 else if (playerMove == 'scissors' && computerMove == 'paper') { 
-    getWinner = 'player';
+    winner = 'player';
 }
 else if (playerMove == 'paper' && computerMove == 'rock') {
-    getWinner = 'player';
+    winner = 'player';
 }
 else if (playerMove == 'paper' && computerMove == 'scissors') {
-    getWinner = 'computer';
+    winner = 'computer';
 }
 else if (playerMove == 'scissors' && computerMove == 'rock') {
-    getWinner = 'computer';
+    winner = 'computer';
 }
 else if (playerMove == 'rock' && computerMove == 'paper') {
-    getWinner = 'computer';
+    winner = 'computer';
 }
 else if ((playerMove == 'rock' && computerMove == 'rock') || (playerMove == 'scissors' && computerMove == 'scissors') || (playerMove == 'paper' && computerMove == 'paper')) {
-    getWinner = 'tie';
+    winner = 'tie';
 }
     return winner;
 }
